@@ -87,11 +87,11 @@ function renderLevels() {
       <div>
         <div class="level-top">
           <h2 class="level-name">${level.name}</h2>
-          <div class="status">${completedLevels.has(level.id) ? "CODE ACCEPTED" : ""}</div>
+          <div class="status">${completedLevels.has(level.id) ? "POPRAWNY KOD" : ""}</div>
         </div>
-        <p class="level-hint">OPEN LEVEL TO VIEW THE CONTENT AND VERIFY THE CODE.</p>
+        <p class="level-hint">OTWÓRZ ZADANIE ABY WPISAĆ KOD.</p>
       </div>
-      <button class="open-level" type="button" data-level-id="${level.id}">OPEN LEVEL</button>
+      <button class="open-level" type="button" data-level-id="${level.id}">OTWÓRZ ZADANIE</button>
     `;
 
     levelGrid.appendChild(card);
@@ -110,7 +110,7 @@ function openLevel(levelId) {
   modalTitle.textContent = level.name;
   levelContent.innerHTML = level.content;
   codeInput.value = "";
-  feedback.textContent = completedLevels.has(levelId) ? "CODE ACCEPTED" : "";
+  feedback.textContent = completedLevels.has(levelId) ? "POPRAWNY KOD" : "";
   feedback.className = completedLevels.has(levelId) ? "feedback success" : "feedback";
   modal.classList.remove("hidden");
 
@@ -134,11 +134,11 @@ codeForm.addEventListener("submit", (event) => {
   if (normalize(codeInput.value) === normalize(level.code)) {
     completedLevels.add(level.id);
     saveProgress();
-    feedback.textContent = "GOOD CODE";
+    feedback.textContent = "POPRAWNY KOD";
     feedback.className = "feedback success";
     renderLevels();
   } else {
-    feedback.textContent = "INCORRECT CODE";
+    feedback.textContent = "BŁĘDNY KOD";
     feedback.className = "feedback error";
   }
 });
