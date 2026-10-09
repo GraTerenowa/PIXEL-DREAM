@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LEVEL CHECK</title>
+  <title>WERYFIKATOR</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -14,9 +14,9 @@
 
   <main class="page-shell">
     <header class="hero">
-      <div class="hero-badge">TEXT VERIFICATION</div>
-      <h1>LEVEL CHECK</h1>
-      <p>VERIFY THE CONTENT OF EACH LEVEL</p>
+      <div class="hero-badge">WERYFIKATOR ZADAŃ</div>
+      <h1></h1>
+      <p>SPRAWDŹ POPRAWNOŚĆ ODPOWIEDZI DO ZADAŃ</p>
     </header>
 
     <section id="levelGrid" class="level-grid" aria-label="Levels"></section>
@@ -26,20 +26,20 @@
     <div class="modal-panel">
       <button id="closeModal" class="close-button" type="button" aria-label="Close">×</button>
 
-      <div class="pixel-label">LEVEL ACCESS</div>
+      <div class="pixel-label">DOSTĘP DO ZADANIA</div>
       <h2 id="modalTitle">LVL 1</h2>
       <div id="levelContent" class="level-content"></div>
 
       <form id="codeForm" class="code-form">
-        <label for="codeInput">ENTER CODE</label>
+        <label for="codeInput">WPROWADŹ KOD</label>
         <div class="input-row">
           <input id="codeInput" type="text" autocomplete="off" spellcheck="false" placeholder="CODE" />
-          <button type="submit" class="pixel-button">CHECK</button>
+          <button type="submit" class="pixel-button">SPRAWDŹ</button>
         </div>
         <div id="feedback" class="feedback" aria-live="polite"></div>
       </form>
 
-      <button id="backButton" class="back-button" type="button">BACK</button>
+      <button id="backButton" class="back-button" type="button">WRÓĆ</button>
     </div>
   </div>
 
