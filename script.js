@@ -7,38 +7,38 @@ const LEVELS = [
   {
     id: 1,
     name: "LVL 1",
-    code: "CHANGE_ME",
-    content: "Enter the content for level 1 here."
+    code: "46",
+    content: "Sprawdź odpowiedź do zadania 1."
   },
   {
     id: 2,
     name: "LVL 2",
-    code: "CHANGE_ME",
-    content: "Enter the content for level 2 here."
+    code: "874",
+    content: "Sprawdź odpowiedź do zadania 2."
   },
   {
     id: 3,
     name: "LVL 3",
-    code: "CHANGE_ME",
-    content: "Enter the content for level 3 here."
+    code: "4872",
+    content: "Sprawdź odpowiedź do zadania 3."
   },
   {
     id: 4,
     name: "LVL 4",
-    code: "CHANGE_ME",
-    content: "Enter the content for level 4 here."
+    code: "2",
+    content: "Sprawdź odpowiedź do zadania 4."
   },
   {
     id: 5,
     name: "LVL 5",
-    code: "CHANGE_ME",
-    content: "Enter the content for level 5 here."
+    code: "428",
+    content: "Sprawdź odpowiedź do zadania 5."
   },
   {
     id: 6,
     name: "LVL 6",
-    code: "CHANGE_ME",
-    content: "Enter the content for level 6 here."
+    code: "28",
+    content: "Sprawdź odpowiedź do zadania 6."
   }
 ];
 
