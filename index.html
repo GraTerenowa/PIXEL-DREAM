@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LEVEL CHECK</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="pixel-stars" aria-hidden="true">
+    <span>✦</span><span>+</span><span>✦</span><span>·</span><span>✦</span><span>+</span>
+    <span>·</span><span>✦</span><span>+</span><span>·</span><span>✦</span><span>+</span>
+  </div>
+
+  <main class="page-shell">
+    <header class="hero">
+      <div class="hero-badge">TEXT VERIFICATION</div>
+      <h1>LEVEL CHECK</h1>
+      <p>VERIFY THE CONTENT OF EACH LEVEL</p>
+    </header>
+
+    <section id="levelGrid" class="level-grid" aria-label="Levels"></section>
+  </main>
+
+  <div id="levelModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-panel">
+      <button id="closeModal" class="close-button" type="button" aria-label="Close">×</button>
+
+      <div class="pixel-label">LEVEL ACCESS</div>
+      <h2 id="modalTitle">LVL 1</h2>
+      <div id="levelContent" class="level-content"></div>
+
+      <form id="codeForm" class="code-form">
+        <label for="codeInput">ENTER CODE</label>
+        <div class="input-row">
+          <input id="codeInput" type="text" autocomplete="off" spellcheck="false" placeholder="CODE" />
+          <button type="submit" class="pixel-button">CHECK</button>
+        </div>
+        <div id="feedback" class="feedback" aria-live="polite"></div>
+      </form>
+
+      <button id="backButton" class="back-button" type="button">BACK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
